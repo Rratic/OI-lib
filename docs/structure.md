@@ -7,7 +7,7 @@
         * FastIO 快速IO
     + sort/ 各种花式排序（建议使用标准库）
         * SlowSort.h 各种O(n^2)排序
-        * FastSort.h 各种O(nlogn)排序
+        * FastSort.h 各种O(nlogn)及基于值域的排序
         * QuadSort.h https://github.com/scandum/quadsort 一个优秀的常数优化
     + dp/ 动态规划相关
         * Knapsack.h 背包问题
