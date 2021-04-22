@@ -3,7 +3,7 @@
 #include "../base/base.h"
 namespace OIalgo{
 template<class ValType>
-class MonotoneQueue{// 单调队列 [Luogu P1886]
+class MonotoneQueue{// 单调队列 [Luogu P1440,1886,2032]
     public:
     list<ValType>data;
     /* 不挤
@@ -19,7 +19,7 @@ class MonotoneQueue{// 单调队列 [Luogu P1886]
         if(flag)data.push_back(x);
     }
     */
-    bool push_min(ValType x){// 用于维护较小值
+    void push_min(ValType x){// 用于维护较小值
         while(!data.empty()){
             if(data.back()>=x)data.pop_back();
             else{
@@ -29,7 +29,7 @@ class MonotoneQueue{// 单调队列 [Luogu P1886]
         }
         data.push_back(x);
     }
-    bool push_max(ValType x){// 用于维护较大值
+    void push_max(ValType x){// 用于维护较大值
         while(!data.empty()){
             if(data.front()<=x)data.pop_front();
             else{

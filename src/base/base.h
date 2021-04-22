@@ -18,6 +18,10 @@ using std::vector;
 typedef long long ll;
 typedef unsigned long long ull;
 typedef unsigned short tocount;
+void SetupFreopen(string s){
+    freopen((s+".in").data(),"r",stdin);
+    freopen((s+".out").data(),"w",stdout);
+}
 void SetupIO(){// 关闭流同步，解除绑定
     std::ios::sync_with_stdio(0);
     cin.tie(0);
