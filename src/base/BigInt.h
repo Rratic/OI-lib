@@ -9,10 +9,13 @@ class BigUInt{// 高精度无符号整数
     size_t pl;// 最高位 data[pl]
     SavedType bound;
     void init(){
-        data.fill(0);
+        // data.fill(0);
         pl=0;
         bound=1;
         for(unsigned short i=0;i<sq;i++)bound*=10;
+    }
+    bool in(SavedType x){
+        data[0]=x;
     }
     bool in(string s){
         pl=0;
@@ -41,6 +44,9 @@ class BigUInt{// 高精度无符号整数
             s=u_to_string<SavedType>(data[i])+s;
         }
         return s;
+    }
+    bool iszero(){
+        return pl==0&&data[0]==0;
     }
     friend bool operator ==(BigUInt a,BigUInt b){
         if(a.pl!=b.pl)return false;
@@ -99,6 +105,17 @@ class BigUInt{// 高精度无符号整数
         cout<<"]"<<pl<<"\n";
     }
     */
+};
+
+template<size_t len,class SavedType=unsigned short,unsigned short sq=4/* 压位 10000 */>
+class BigInt{// 高精度整数
+    public:
+    BigUInt<len,SavedType,sq>base;
+    bool sign;// false=正 true=负
+    void init(){
+        base.init();
+        sign=false;
+    }
 };
 };
 #endif

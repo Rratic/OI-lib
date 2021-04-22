@@ -2,7 +2,7 @@
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
-// 开发者测试 | 欢迎访问 https://github.com/OIalgorithm/OIalgorithm
+// 开发者测试 | 欢迎访问 https://github.com/OIalgorithm/OI-lib
 typedef long long ll;
 typedef unsigned long long ull;
 void SetupIO(){
