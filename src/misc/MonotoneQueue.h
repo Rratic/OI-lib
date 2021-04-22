@@ -1,3 +1,5 @@
+#ifndef OI_MONOTONEQUEUE
+#define OI_MONOTONEQUEUE
 #include "../base/base.h"
 namespace OIalgo{
 template<class ValType>
@@ -47,3 +49,4 @@ class MonotoneQueue{// 单调队列 [Luogu P1886]
     }
 };
 };
+#endif

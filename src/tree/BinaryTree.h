@@ -1,3 +1,5 @@
+#ifndef OI_BINARYTREE
+#define OI_BINARYTREE
 #include "../base/base.h"
 namespace OIalgo{
 /* 指针实现
@@ -98,3 +100,4 @@ class BinaryTree{
     }
 };
 };
+#endif

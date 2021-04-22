@@ -1,3 +1,5 @@
+#ifndef OI_ALGO
+#define OI_ALGO
 #include "dp/Knapsack.h"
 #include "tree/BinaryTree.h"
 #include "tree/SegmentTree.h"
@@ -6,4 +8,6 @@
 #ifdef ACCEPT_ALL_ALGORITHM
 #include "sort/SlowSort.h"
 #include "sort/FastSort.h"
+#endif
+
 #endif

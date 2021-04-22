@@ -1,6 +1,8 @@
-#ifndef OI_FASTSORT
-#define OI_FASTSORT
+```cpp
+#ifndef OI_
+#define OI_
 #include "../base/base.h"
 namespace OIalgo{
 };
 #endif
+```

@@ -1,3 +1,5 @@
+#ifndef OI_DISJOINTSETUNION
+#define OI_DISJOINTSETUNION
 #include "../base/base.h"
 namespace OIalgo{
 template<const size_t len>
@@ -24,3 +26,4 @@ class DisjointSetUnion{// 并查集 [Luogu P3367]
     }
 };
 };
+#endif

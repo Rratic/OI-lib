@@ -1,3 +1,5 @@
+#ifndef OI_SLOWSORT
+#define OI_SLOWSORT
 #include "../base/base.h"
 namespace OIalgo{
 // 这些排序并不是此库的主要部分，不予过多功能
@@ -40,3 +42,4 @@ void InsertionSort(ValType a[],size_t n){// 插入排序
     }
 }
 };
+#endif

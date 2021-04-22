@@ -34,4 +34,5 @@ int main(){
 ## 进行贡献
 * [了解代码格式标准](docs/format.md)
 * [增加新功能需要改变的文件](docs/change.md)
+* [模板](docs/h-template.md)
 * [开发者测试](docs/template.md)

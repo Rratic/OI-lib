@@ -1,3 +1,5 @@
+#ifndef OI_KNAPSACK
+#define OI_KNAPSACK
 #include "../base/base.h"
 namespace OIalgo{
 /*
@@ -40,3 +42,4 @@ template<class ValType=size_t>// 混合背包 [Luogu P1833,P1507]
 ValType MixedKnapsack(ValType n,ValType mw,ValType w[],ValType v[],ValType c[],ValType *dp){
 }
 };
+#endif
