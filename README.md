@@ -28,7 +28,7 @@ int main(){
 * 请善用您编辑器的搜索功能
 * [结构说明](docs/structure.md)
 * [代码中使用的OI不太常用的语法](docs/grammar.md)
-* [来github仓库提问](https://github.com/OIalgorithm/OI-lib)
+* [来github仓库提问](https://github.com/OIalgorithm/OI-lib/issues)
 * [常见问题Q&A](docs/QA.md)
 
 ## 进行贡献
