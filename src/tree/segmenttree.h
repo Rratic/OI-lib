@@ -9,6 +9,10 @@ template<size_t len,class ValType=ll>// 线段树 [Luogu P3372,3373]
 class SegmentTree{
     public:
     ValType tag[len*4]/* 懒惰标记 */,ans[len*4];
+    void init(){
+        memset(tag,0,sizeof(tag));
+        memset(ans,0,sizeof(ans));
+    }
     size_t lch(size_t x){return x*2;}
     size_t rch(size_t x){return x*2|1;}
     void push_up(size_t x){// 合并子节点信息
@@ -54,7 +58,7 @@ class SegmentTree{
     ValType query(size_t left,size_t right,size_t l,size_t r,size_t pl){// 进行询问操作
         ValType anss=0;
         if(left<=l&&r<=right)return ans[pl];
-        size_t mid=(left+right)/2;
+        size_t mid=(l+r)/2;
         push_down(pl,l,r);
         if(left<=mid)anss+=query(left,right,l,mid,lch(pl));
         if(mid+1<=right)anss+=query(left,right,mid+1,r,rch(pl));
