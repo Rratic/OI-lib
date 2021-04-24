@@ -3,7 +3,7 @@
 #include "../base/base.h"
 namespace OIalgo{
 /*
-推荐阅读 [背包问题9讲](https://github.com/tianyicui/pack)
+推荐阅读 [背包问题9讲](https://github.com/tianyicui/pack) 以及 [洛谷日报 #61](https://www.luogu.com.cn/blog/RPdreamer/bei-bao-wen-ti)
 
 n: 数量
 v[i]: 第i个物品的价值

@@ -44,6 +44,7 @@ template<class ValType>
 void ThreeWayRadixSort(ValType *a,size_t n){// 三路快速排序
 }
 
+// 推荐阅读 [洛谷日报 #222](https://www.luogu.com.cn/blog/Victory-Defeat/qian-xi-sort)
 template<class ValType>
 void IntroSort(ValType *a,size_t n){// 内省排序
 }

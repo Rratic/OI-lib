@@ -1,6 +1,9 @@
 #ifndef OI_SEGMENTTREE
 #define OI_SEGMENTTREE
 #include "../base/base.h"
+/*
+推荐阅读 [洛谷日报 #5](https://www.luogu.com.cn/blog/pks-LOVING/senior-data-structure-qian-tan-xian-duan-shu-segment-tree)
+*/
 namespace OIalgo{
 template<size_t len,class ValType=ll>// 线段树 [Luogu P3372,3373]
 class SegmentTree{
