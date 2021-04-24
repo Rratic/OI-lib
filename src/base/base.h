@@ -2,6 +2,7 @@
 #define OI_BASE
 #include <algorithm>
 #include <array>
+#include <cstring>
 #include <iostream>
 #include <list>
 #include <string>
@@ -12,7 +13,9 @@ using std::cin;
 using std::cout;
 using std::list;
 using std::max;
+using std::memset;
 using std::string;
+using std::system;
 using std::swap;
 using std::vector;
 typedef long long ll;

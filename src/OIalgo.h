@@ -10,4 +10,8 @@
 #include "sort/FastSort.h"
 #endif
 
+#ifdef USE_TOOLS
+#include "tool/PrintStyled.h"
+#endif
+
 #endif
