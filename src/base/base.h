@@ -21,6 +21,8 @@ using std::vector;
 typedef long long ll;
 typedef unsigned long long ull;
 typedef unsigned short tocount;
+#define LeftCh 0
+#define RightCh 1
 void SetupFreopen(string s){
     freopen((s+".in").data(),"r",stdin);
     freopen((s+".out").data(),"w",stdout);
