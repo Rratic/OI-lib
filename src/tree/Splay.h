@@ -5,6 +5,7 @@ namespace OIalgo{
 /*
 推荐阅读 [洛谷日报 #62](https://www.luogu.com.cn/blog/tiger0132/slay-notes)
 Splay是一种经典的BST（二叉搜索树），维护任意A：A的左子树任意节点的值<A的值<A的右子树任意节点的值
+[Luogu P3369]
 */
 template<size_t len,class ValType=ll>
 class Splay{
@@ -27,7 +28,7 @@ class Splay{
     size_t chk(size_t x){// 查询左还是右
         return ch[1][fa[x]]==x;
     }
-    void push_up(size_t pl){
+    void push_up(size_t x){
         size[x]=size[ch[0][x]]+size[ch[1][x]]+cnt[x];
     }
 /*
@@ -56,9 +57,10 @@ class Splay{
         push_up(x);
     }
     void splay(size_t x,size_t goal=0){// 伸展
-        while(par[x]!=goal){
-            size_t y=par[x],z=par[y];
-            if (z!=goal){
+        while(fa[x]!=goal){
+            size_t y=fa[x];
+            size_t z=fa[y];
+            if(z!=goal){
                 if(chk(x)==chk(y))rotate(y);
                 else rotate(x);
             }
@@ -133,6 +135,19 @@ class Splay{
         while (ch[0][cur])cur=ch[0][cur];
         splay(cur);
         return cur;
+    }
+    void remove(size_t x){
+        size_t last=pre(x),next=succ(x);
+        splay(last);
+        splay(last,next);
+        size_t del=ch[0][next];
+        if(cnt[del]>1){// 特判
+            cnt[del]--;
+            splay(del);
+        }
+        else ch[0][next]=0;
+        push_up(next);
+        push_up(x);
     }
 };
 };
