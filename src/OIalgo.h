@@ -1,6 +1,7 @@
 #ifndef OI_ALGO
 #define OI_ALGO
 #include "dp/Knapsack.h"
+#include "hash/Hash.h"
 #include "tree/BinaryTree.h"
 #include "tree/SegmentTree.h"
 #include "tree/Splay.h"

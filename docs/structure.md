@@ -10,6 +10,7 @@
         * FastSort.h 各种O(nlogn)及基于值域的排序
         * QuadSort.h https://github.com/scandum/quadsort 一个优秀的常数优化
     + hash/ 哈希相关
+        * Hash.h 哈希（拉链法）
     + dp/ 动态规划相关
         * Knapsack.h 背包问题
     + tree/ 关于树
@@ -17,6 +18,7 @@
         * SegmentTree.h 线段树
         * Splay.h splay平衡树
     + graph/ 关于图
+    + mo/ 莫队相关
     + math/ 数学相关
         + NumberTheory/ 数论相关
         + Polynomial/ 多项式相关
@@ -26,6 +28,7 @@
         + 3D/ 三维
     + misc/ 杂项
         * DisjointSetUnion.h 并查集
+        * MonotoneStack.h 单调栈
         * MonotoneQueue.h 单调队列
     + tool/ 小工具
         * PrintStyled.h 轻量级文字特效
